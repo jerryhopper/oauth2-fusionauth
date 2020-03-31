@@ -16,6 +16,11 @@ class FusionAuth extends AbstractProvider
     protected $baseUrl;
     protected $apiVersion = 'v1';
 
+    protected $urlAuthorize;
+    protected $urlAccessToken;
+    protected $urlResourceOwnerDetails;
+
+
     /**
      * Get authorization url to begin OAuth flow
      *
@@ -23,7 +28,7 @@ class FusionAuth extends AbstractProvider
      */
     public function getBaseAuthorizationUrl()
     {
-        return $this->getBaseApiUrl() . '/authorize';
+        return $this->urlAuthorize;
     }
 
     /**
@@ -35,7 +40,7 @@ class FusionAuth extends AbstractProvider
      */
     public function getBaseAccessTokenUrl(array $params)
     {
-        return $this->getBaseApiUrl() . '/token';
+        return $this->urlAccessToken;
     }
 
     /**
@@ -47,7 +52,7 @@ class FusionAuth extends AbstractProvider
      */
     public function getResourceOwnerDetailsUrl(AccessToken $token)
     {
-        return $this->getBaseApiUrl() . '/userinfo';
+        return $this->urlResourceOwnerDetails;
     }
 
     /**
@@ -70,7 +75,7 @@ class FusionAuth extends AbstractProvider
      *
      * @param  ResponseInterface $response
      * @param  string $data Parsed response data
-     * @throws \League\OAuth2\Client\Provider\Exception\IdentityProviderException
+     * @throws \JerryHopper\Directus\OAuth2\Client\Provider\Exception\FusionAuthIdentityProviderException
      */
     protected function checkResponse(ResponseInterface $response, $data)
     {

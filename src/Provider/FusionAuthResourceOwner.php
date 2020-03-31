@@ -80,7 +80,7 @@ class FusionAuthResourceOwner implements ResourceOwnerInterface
      */
     public function getNickname()
     {
-        return $this->getValueByKey($this->response, 'nickname');
+        return $this->getValueByKey($this->response, 'preferred_username');
     }
 
     /**
