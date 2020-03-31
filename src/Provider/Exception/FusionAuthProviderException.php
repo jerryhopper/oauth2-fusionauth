@@ -1,11 +1,11 @@
 <?php
 
-namespace JerryHopper\OAuth2\Client\Provider\Exception;
+namespace JerryHopper\Directus\OAuth2\Client\Provider\Exception;
 
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use Psr\Http\Message\ResponseInterface;
 
-class OktaIdentityProviderException extends IdentityProviderException
+class FusionAuthIdentityProviderException extends IdentityProviderException
 {
     /**
      * Creates client exception from response.
