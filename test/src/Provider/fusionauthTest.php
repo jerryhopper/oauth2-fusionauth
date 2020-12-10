@@ -18,6 +18,9 @@ class FusionauthTest extends \PHPUnit_Framework_TestCase
             'clientId' => 'mock_client_id',
             'clientSecret' => 'mock_secret',
             'redirectUri' => 'none',
+            'urlAuthorize'            => "authorization_endpoint",
+            'urlAccessToken'          => "token_endpoint",
+            'urlResourceOwnerDetails' => "userinfo_endpoint",
         ]);
     }
 
