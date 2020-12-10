@@ -1,0 +1,6 @@
+/build
+/vendor
+/test/test
+composer.phar
+composer.lock
+.DS_Store
