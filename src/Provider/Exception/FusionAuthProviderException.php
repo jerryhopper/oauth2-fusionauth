@@ -1,6 +1,6 @@
 <?php
 
-namespace JerryHopper\Directus\OAuth2\Client\Provider\Exception;
+namespace JerryHopper\OAuth2\Client\Provider\Exception;
 
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use Psr\Http\Message\ResponseInterface;
