@@ -1,5 +1,5 @@
 {
-    "name": "jerryhopper/directus-oauth2-fusionauth",
+    "name": "jerryhopper/oauth2-fusionauth",
     "description": "FusionAuth OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
     "license": "MIT",
     "authors": [
@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "JerryHopper\\Directus\\OAuth2\\Client\\": "src/"
+            "JerryHopper\\OAuth2\\Client\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "JerryHopper\\Directus\\OAuth2\\Client\\Test\\": "test/src/"
+            "JerryHopper\\OAuth2\\Client\\Test\\": "test/src/"
         }
     },
     "extra": {
