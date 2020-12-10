@@ -7,17 +7,17 @@ This package provides FusionAuth OAuth 2.0 support for the PHP League's [OAuth 2
 To install, use composer:
 
 ```
-composer require jerryhopper/directus-oauth2-fusionauth
+composer require jerryhopper/oauth2-fusionauth
 ```
 
 ## Usage
 
-Usage is the same as The League's OAuth client, using `\JerryHopper\Directus\OAuth2\Client\Provider\FusionAuth` as the provider.
+Usage is the same as The League's OAuth client, using `\JerryHopper\OAuth2\Client\Provider\FusionAuth` as the provider.
 
 ### Authorization Code Flow
 
 ```php
-$provider = new \JerryHopper\Directus\OAuth2\Client\Provider\FusionAuth([
+$provider = new \JerryHopper\OAuth2\Client\Provider\FusionAuth([
     'clientId'          => '{client-id}',
     'clientSecret'      => '{client-secret}',
     'redirectUri'       => 'https://example.com/callback-url',
