@@ -3,6 +3,7 @@
 namespace Jerryhopper\OAuth2\Client\Test\Provider;
 
 use League\OAuth2\Client\Tool\QueryBuilderTrait;
+use Jerryhopper\OAuth2\Client\Provider\FusionAuth;
 use Mockery as m;
 
 class FusionauthTest extends \PHPUnit_Framework_TestCase
@@ -13,7 +14,7 @@ class FusionauthTest extends \PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-        $this->provider = new \Jerryhopper\OAuth2\Client\Provider\FusionAuth([
+        $this->provider = new FusionAuth([
             'clientId' => 'mock_client_id',
             'clientSecret' => 'mock_secret',
             'redirectUri' => 'none',
