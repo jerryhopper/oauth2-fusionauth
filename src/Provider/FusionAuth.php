@@ -1,13 +1,13 @@
 <?php
 
-namespace JerryHopper\Directus\OAuth2\Client\Provider;
+namespace JerryHopper\OAuth2\Client\Provider;
 
 use League\OAuth2\Client\Provider\AbstractProvider;
 use League\OAuth2\Client\Provider\ResourceOwnerInterface;
 use League\OAuth2\Client\Token\AccessToken;
 use League\OAuth2\Client\Tool\BearerAuthorizationTrait;
 use Psr\Http\Message\ResponseInterface;
-use JerryHopper\Directus\OAuth2\Client\Provider\Exception\FusionAuthIdentityProviderException;
+use JerryHopper\OAuth2\Client\Provider\Exception\FusionAuthIdentityProviderException;
 
 class FusionAuth extends AbstractProvider
 {
@@ -75,7 +75,7 @@ class FusionAuth extends AbstractProvider
      *
      * @param  ResponseInterface $response
      * @param  string $data Parsed response data
-     * @throws \JerryHopper\Directus\OAuth2\Client\Provider\Exception\FusionAuthIdentityProviderException
+     * @throws \JerryHopper\OAuth2\Client\Provider\Exception\FusionAuthIdentityProviderException
      */
     protected function checkResponse(ResponseInterface $response, $data)
     {
